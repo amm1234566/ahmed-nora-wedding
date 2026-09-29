@@ -42,6 +42,7 @@
 .envelope-letter span{font-size:clamp(1.3rem,2vw,2rem)}.envelope-letter strong{font-size:clamp(2.5rem,7vw,6rem)}
 .envelope-seal{z-index:7;left:50%;top:61%;transform:translate(-50%,-50%);width:clamp(100px,13vw,160px);height:clamp(100px,13vw,160px);border-radius:50%;background:radial-gradient(circle at 32% 25%,#efdca2,#bd9147 54%,#805d28 90%);border:5px double #f5df9e;color:#10253e;box-shadow:0 10px 20px #010714a8,inset 0 1px 8px #fff5ceaa;font:700 clamp(1.2rem,2.2vw,2rem) Georgia,serif;letter-spacing:.04em;white-space:nowrap;text-shadow:0 1px #fff4c5;transition:opacity .4s,transform .8s}
 .envelope-seal span{font-size:.8em;color:#7e2639;padding:0 .1em}
+.envelope-seal{display:flex;align-items:center;justify-content:center;gap:.12em}
 .envelope-prompt{z-index:7;bottom:13%;font-size:clamp(.9rem,1.4vw,1.2rem);color:#f1e6c9;text-shadow:0 2px 8px #000;letter-spacing:.19em;transition:opacity .35s}
 .is-opening .envelope-flap{transform:rotateX(180deg);z-index:3}.is-opening .envelope-front{transform:translateY(75%);opacity:0}.is-opening .envelope-letter{transform:translateY(-24%)}.is-opening .envelope-seal{transform:translate(-50%,-50%) scale(.8)}
 @media(max-width:650px){.envelope-flap{height:61%}.envelope-front{clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%)}.envelope-letter{left:8%;width:84%;height:55%;top:20%;padding:1rem}.envelope-seal{top:58%;width:104px;height:104px}.envelope-prompt{bottom:15%}}
