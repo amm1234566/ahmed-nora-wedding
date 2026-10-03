@@ -31,26 +31,27 @@
 .details .details-grid>div{background:#eee7d7}
 @media(max-width:650px){.details .branch-right{right:-125px;bottom:4%;width:290px;opacity:.85}.details .branch-left{left:-165px;bottom:-50px;opacity:.65}.details .details-grid{width:calc(100% - 40px);box-shadow:0 0 20px 16px #eee7d7}.details .intro{max-width:calc(100% - 48px);box-shadow:0 0 16px 12px #eee7d7}}
 
-/* Full-screen wedding envelope in pearl blush and rose gold. */
-.envelope-screen{padding:0;background:#e8c9bf;perspective:1800px}
+/* Full-screen ceremonial envelope in embossed midnight blue. */
+.envelope-screen{padding:0;background:#09172d;perspective:1800px}
 .envelope-stage{width:100%;height:100%;filter:none}
 .envelope-button{width:100%;height:100%;min-height:100svh;perspective:1800px;transform:none;overflow:hidden}
 .envelope-button:hover,.is-opening .envelope-button{transform:none}
-.envelope-back{background:radial-gradient(ellipse at center,#fbefe7 0%,#eacdc3 65%,#d4a79b 100%);border:0;box-shadow:inset 0 0 100px #a86e5320}
-.envelope-letter{left:8%;top:8%;width:84%;height:84%;justify-content:center;gap:18px;background:#fff7eb;border:1px solid #c8a26c;color:#65493b;box-shadow:0 0 30px #85574333;padding:30px}
+.envelope-back{background:#09172d;border:0;box-shadow:inset 0 0 100px #0008}
+.envelope-letter{left:8%;top:8%;width:84%;height:84%;justify-content:center;gap:18px;background:#fff7eb;border:1px solid #c8a26c;color:#65493b;box-shadow:0 0 30px #0005;padding:30px}
 .envelope-letter span{font-size:clamp(1.5rem,4vw,2.5rem)}
 .envelope-letter strong{font-size:clamp(3rem,8vw,6rem);line-height:1.4}
-.envelope-front{background:linear-gradient(145deg,#f7e4db 0%,#edcec3 50%,#deb3a4 100%);clip-path:polygon(0 0,50% 51%,100% 0,100% 100%,0 100%);box-shadow:inset 0 -35px 90px #9d665125;transition:transform 1.2s ease .55s}
-.envelope-front:after{inset:12px;border:1px solid #fff8e88c;clip-path:polygon(0 0,50% 51%,100% 0,100% 100%,0 100%)}
-.envelope-flap{height:53%;background:linear-gradient(165deg,#fff0e5 0%,#f2d8ca 60%,#dbb09a 100%);filter:drop-shadow(0 8px 7px #95604745);transition:transform 1.3s cubic-bezier(.35,.05,.3,1)}
-.envelope-seal{top:calc(51% - 65px);left:calc(50% - 65px);width:130px;height:130px;display:flex;align-items:center;justify-content:center;gap:9px;border:3px solid #d7aa76;background:radial-gradient(circle at 35% 30%,#f3d6a2,#d4a46b 58%,#ac7445);color:#684127;font-family:Georgia,'Times New Roman',serif;font-size:34px;box-shadow:0 8px 24px #885f4b55,inset 0 0 0 5px #e9c78f,inset 0 0 0 7px #b57d4d;transition:opacity .4s,transform .55s}
-.envelope-seal .seal-heart{font-size:24px;color:#a14e54}
-.envelope-prompt{bottom:23%;color:#805547;font-size:clamp(.9rem,2vw,1.15rem);letter-spacing:.22em;text-shadow:0 1px 1px #fff7eb}
-.envelope-button:focus-visible{outline:4px solid #9d6750;outline-offset:-10px}
+.envelope-front{background:linear-gradient(145deg,#29405a33,#02091955),url('navy-paper.jpg') center/100% 100% no-repeat #0d203c;clip-path:none;box-shadow:inset 0 -35px 90px #0005;transition:transform 1.2s ease .55s}
+.envelope-front:after{inset:0;border:0;clip-path:none;background:linear-gradient(to top right,transparent 49.7%,#64819b55 49.9%,#010916aa 50.1%,transparent 50.5%) left bottom/50% 58% no-repeat,linear-gradient(to top left,transparent 49.7%,#64819b55 49.9%,#010916aa 50.1%,transparent 50.5%) right bottom/50% 58% no-repeat}
+.envelope-flap{height:66%;background:none;clip-path:none;filter:drop-shadow(0 10px 7px #000b);transition:transform 1.3s cubic-bezier(.35,.05,.3,1)}
+.envelope-flap:before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,#50729833,#07162c22),url('navy-paper.jpg') center/100% 100% no-repeat #102541;clip-path:polygon(0 0,100% 0,100% 63%,53% 99%,50% 100%,47% 99%,0 63%);box-shadow:inset 0 1px 0 #8095ad55}
+.envelope-seal{top:calc(63% - 60px);left:calc(50% - 60px);width:120px;height:120px;display:flex;align-items:center;justify-content:center;gap:8px;border:2px solid #d7b579;background:radial-gradient(circle at 32% 24%,#f5dfad,#d0a762 55%,#987039 90%);color:#483219;font-family:Georgia,'Times New Roman',serif;font-size:33px;box-shadow:0 8px 25px #0009,inset 0 0 0 5px #edcf91,inset 0 0 0 7px #a17b43;text-shadow:0 1px 1px #fff0c3;transition:opacity .4s,transform .55s}
+.envelope-seal .seal-heart{font-size:23px;color:#65441f}
+.envelope-prompt{bottom:19%;color:#e4c995;font-size:clamp(.8rem,2vw,1rem);letter-spacing:.22em;text-shadow:0 2px 6px #000}
+.envelope-button:focus-visible{outline:3px solid #dfc28b;outline-offset:-10px}
 .is-opening .envelope-seal{transform:scale(1.12);opacity:0}
 .is-opening .envelope-letter{transform:translateY(-12%);z-index:3}
 .is-opening .envelope-front{transform:translateY(100%)}
-@media(max-width:650px){.envelope-seal{width:110px;height:110px;top:calc(51% - 55px);left:calc(50% - 55px);font-size:29px;gap:8px}.envelope-seal .seal-heart{font-size:20px}.envelope-letter{padding:22px}.envelope-prompt{bottom:26%}.is-opening .envelope-letter{transform:translateY(-8%)}}
+@media(max-width:650px){.envelope-seal{width:104px;height:104px;top:calc(63% - 52px);left:calc(50% - 52px);font-size:28px;gap:7px}.envelope-seal .seal-heart{font-size:19px}.envelope-letter{padding:22px}.envelope-prompt{bottom:20%}.is-opening .envelope-letter{transform:translateY(-8%)}}
 @media(prefers-reduced-motion:reduce){.envelope-front,.envelope-seal{transition-duration:.01ms!important;transition-delay:0ms!important}}
 
 .music-toggle[hidden]{display:none}.rsvp textarea{resize:vertical}.choices input{width:18px;height:18px;vertical-align:middle}.choices label:has(input:checked){background:#eee6d6;border-color:#7a684b}footer.wedding-thanks p{font-family:Amiri,serif;font-size:clamp(1.8rem,5vw,2.8rem)}
